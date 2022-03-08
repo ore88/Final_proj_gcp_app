@@ -26,3 +26,4 @@ Jinja2==2.10.1
 black
 pylint
 pytest
+python-dotenv

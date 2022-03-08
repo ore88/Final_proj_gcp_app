@@ -1,10 +1,28 @@
+import os
 import pandas as pd
 import numpy as np
 from flask import Flask,request, url_for, redirect, render_template, jsonify
 import pickle
 from google.cloud import storage
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'/content/drive/MyDrive/gcp_key.json'
+from dotenv import load_dotenv
+
+load_dotenv() 
+
+config = {
+    "type": os.getenv("Type"),
+    "project_id": os.getenv("Project_id"),
+    "private_key_id": os.getenv("Private_key_id"),
+    "private_key": oos.getenv("Private_key"), 
+    "client_email": os.getenv("Client_email"),
+    "client_id": os.getenv("Client_id"),
+    "auth_uri": os.getenv("Auth_uri"),
+    "token_uri": os.getenv("Token_uri"),
+    "auth_provider_x509_cert_url": os.getenv("Auth_provider_x_cert_url"),
+    "client_x509_cert_url": os.getenv("Client_x_cert_url")
+  }
+
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'config'
 storage_client = storage.Client()
 
 CLOUD_PROJECT = 'grand-drive-342813' # GCP project name
