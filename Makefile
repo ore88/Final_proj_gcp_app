@@ -1,5 +1,10 @@
 install:
-	pip install -r requirements.txt
+	RUN python3 -m pip install --upgrade pip
 
-lint:
-	pylint --disable=R,C main.py
+	pip install --upgrade pip &&\
+		pip install -r requirements.txt
+	
+format:
+	black *.py
+
+all: install lint test
