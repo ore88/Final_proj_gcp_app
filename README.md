@@ -1,7 +1,9 @@
 # Final_proj_gcp_app
 
 To get started do this:
-
+    
+    'ssh-keygen -t rsa'
+    '/home/xxxxx/.ssh/id_rsa.pub'
     'virtualenv ~/.venv'
     'source ~/.venv/bin/activate'
     'Vim'
