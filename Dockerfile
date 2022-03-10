@@ -10,11 +10,11 @@ RUN apt-get update -y && \
 
 COPY ./requirements.txt
 
-WORKDIR /app
+WORKDIR /Final_proj_gcp_app
 
 RUN pip install -r requirements.txt
 
 COPY . /app
 
 
-CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 project:app
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 main:app
