@@ -8,7 +8,7 @@ EXPOSE 80
 RUN apt-get update -y && \
     apt-get install -y python3-pip
 
-COPY ./requirements.txt /app/requirements.txt
+COPY ./requirements.txt
 
 WORKDIR /app
 
