@@ -1,0 +1,239 @@
+2022-03-08 23:00:04,006 DEBUG    root            Loaded Command Group: ['gcloud', 'run']
+2022-03-08 23:00:04,169 DEBUG    root            Loaded Command Group: ['gcloud', 'run', 'deploy']
+2022-03-08 23:00:04,200 DEBUG    root            Running [gcloud.run.deploy] with arguments: [--allow-unauthenticated: "True", --clear-env-vars: "True", --client-name: "Cloud Code for VS Code", --client-version: "1.14.1", --concurrency: "80", --cpu: "1", --image: "gcr.io/ordinal-throne-343519/mmaajjuulloo", --memory: "256Mi", --platform: "managed", --port: "8080", --project: "ordinal-throne-343519", --region: "us-central1", --timeout: "300", SERVICE: "mmaajjuulloo"]
+2022-03-08 23:00:04,221 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true
+2022-03-08 23:00:04,228 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2022-03-08 23:00:04,232 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true HTTP/1.1" 200 None
+2022-03-08 23:00:04,234 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token
+2022-03-08 23:00:04,237 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2022-03-08 23:00:04,241 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token HTTP/1.1" 200 None
+2022-03-08 23:00:04,259 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true
+2022-03-08 23:00:04,267 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2022-03-08 23:00:04,277 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true HTTP/1.1" 200 None
+2022-03-08 23:00:04,278 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token
+2022-03-08 23:00:04,285 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2022-03-08 23:00:04,288 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token HTTP/1.1" 200 None
+2022-03-08 23:00:04,347 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true
+2022-03-08 23:00:04,357 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2022-03-08 23:00:04,364 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true HTTP/1.1" 200 None
+2022-03-08 23:00:04,366 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token
+2022-03-08 23:00:04,375 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2022-03-08 23:00:04,380 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token HTTP/1.1" 200 None
+2022-03-08 23:00:04,401 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true
+2022-03-08 23:00:04,407 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2022-03-08 23:00:04,411 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true HTTP/1.1" 200 None
+2022-03-08 23:00:04,412 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token
+2022-03-08 23:00:04,416 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2022-03-08 23:00:04,420 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token HTTP/1.1" 200 None
+2022-03-08 23:00:04,446 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): us-central1-run.googleapis.com:443
+2022-03-08 23:00:04,807 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 404 None
+2022-03-08 23:00:04,810 INFO     ___FILE_ONLY___ Deploying container to Cloud Run service [mmaajjuulloo] in project [ordinal-throne-343519] region [us-central1]
+
+2022-03-08 23:00:04,811 INFO     ___FILE_ONLY___ Deploying new service...
+2022-03-08 23:00:05,879 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "POST /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:05,894 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): run.googleapis.com:443
+2022-03-08 23:00:06,226 DEBUG    urllib3.connectionpool https://run.googleapis.com:443 "GET /v1/projects/ordinal-throne-343519/locations/us-central1/services/mmaajjuulloo:getIamPolicy?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:06,667 DEBUG    urllib3.connectionpool https://run.googleapis.com:443 "POST /v1/projects/ordinal-throne-343519/locations/us-central1/services/mmaajjuulloo:setIamPolicy?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:06,978 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:08,295 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:09,629 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:10,920 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:12,231 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:13,532 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:14,832 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:16,099 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:17,398 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:18,666 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:19,962 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:21,247 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:22,535 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:23,825 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:25,097 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:26,398 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:27,691 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:29,003 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:30,335 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:31,633 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:32,899 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:34,162 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:35,471 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:36,750 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:38,042 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:39,290 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:40,588 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:41,877 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:42,968 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:44,226 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:45,355 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:46,605 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:47,678 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:48,933 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:50,223 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:51,310 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:52,417 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:53,689 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:55,002 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:56,085 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:57,374 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:58,630 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:00:59,891 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:01,018 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:02,093 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:03,362 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:04,485 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:05,789 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:06,880 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:07,977 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:09,242 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:10,322 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:11,577 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:12,847 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:13,971 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:15,058 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:16,155 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:17,434 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:18,683 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:19,939 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:21,293 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:22,550 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:23,650 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:24,740 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:26,010 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:27,301 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:28,397 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:29,474 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:30,557 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:31,646 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:32,940 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:34,040 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:35,349 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:36,440 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:37,522 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:38,662 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:39,948 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:41,208 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:42,293 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:43,546 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:44,822 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:45,916 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:47,007 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:48,081 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:49,153 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:50,227 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:51,308 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:52,402 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:53,508 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:54,588 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:55,691 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:56,779 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:58,035 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:01:59,346 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:00,612 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:01,891 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:03,160 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:04,429 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:05,513 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:06,771 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:07,858 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:08,948 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:10,043 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:11,135 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:12,215 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:13,310 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:14,407 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:15,522 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:16,609 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:17,682 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:18,758 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:19,827 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:20,947 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:22,060 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:23,318 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:24,581 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:25,666 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:26,749 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:27,846 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:28,948 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:30,208 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:31,298 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:32,393 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:33,474 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:34,609 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:35,677 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:36,758 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:37,881 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:38,996 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:40,098 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:41,177 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:42,431 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:43,502 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:44,568 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:45,647 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:46,724 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:47,797 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:48,875 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:50,146 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:51,412 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:52,503 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:53,587 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:54,676 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:55,761 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:57,030 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:58,142 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:02:59,416 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:00,678 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:01,760 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:02,836 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:04,113 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:05,405 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:06,490 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:07,583 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:08,670 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:09,936 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:11,023 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:12,287 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:13,419 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:14,673 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:15,796 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:16,869 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:17,971 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:19,085 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:20,390 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:21,646 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:22,723 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:23,797 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:24,871 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:25,973 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:27,238 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:28,324 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:29,405 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:30,489 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:31,576 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:37,830 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 503 None
+2022-03-08 23:03:37,831 DEBUG    root            Response returned status 503, retrying
+2022-03-08 23:03:37,831 DEBUG    root            Retrying request to url https://us-central1-run.googleapis.com/apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json after exception HttpError accessing <https://us-central1-run.googleapis.com/apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Tue, 08 Mar 2022 23:03:37 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'transfer-encoding': 'chunked', 'status': 503}>, content <{
+  "error": {
+    "code": 503,
+    "message": "The service is currently unavailable.",
+    "status": "UNAVAILABLE"
+  }
+}
+>
+2022-03-08 23:03:40,052 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:45,121 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 503 None
+2022-03-08 23:03:45,123 DEBUG    root            Response returned status 503, retrying
+2022-03-08 23:03:45,123 DEBUG    root            Retrying request to url https://us-central1-run.googleapis.com/apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json after exception HttpError accessing <https://us-central1-run.googleapis.com/apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Tue, 08 Mar 2022 23:03:45 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'transfer-encoding': 'chunked', 'status': 503}>, content <{
+  "error": {
+    "code": 503,
+    "message": "The service is currently unavailable.",
+    "status": "UNAVAILABLE"
+  }
+}
+>
+2022-03-08 23:03:47,695 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:47,823 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:47,830 INFO     ___FILE_ONLY___ Service [mmaajjuulloo] revision [mmaajjuulloo-00001-kos] has been deployed and is serving 100 percent of traffic.
+Service URL: https://mmaajjuulloo-fykze4f6fa-uc.a.run.app
+
+2022-03-08 23:03:47,832 INFO     root            Display format: "none"
+2022-03-08 23:03:47,840 DEBUG    root            SDK update checks are disabled.

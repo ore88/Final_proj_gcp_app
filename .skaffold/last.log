@@ -1,0 +1,25 @@
+Activated kube-context "cloud-run-dev-internal"
+starting gRPC server on port 35767
+starting gRPC HTTP server on port 35409 (proxying to 35767)
+Skaffold &{Version:v1.36.0 ConfigVersion:skaffold/v2beta27 GitVersion: GitCommit:189a55291c18ac850277134d2b8f3eaa2c4f7a1d BuildDate:2022-02-09T17:00:16Z GoVersion:go1.17 Compiler:gc Platform:linux/amd64 User:}
+Loaded Skaffold defaults from "/home/mmaajjuulloo/.skaffold/config"
+map entry found when executing locate for &{mmaajjuulloo Final_proj_gcp_app <nil> {0xc0002c16b0 <nil> <nil> <nil> <nil> <nil> <nil>} [] {[] []} []} of type *v1.Artifact and pointer: 824643972288
+Using kubectl context: cloud-run-dev-internal
+Using minikube docker daemon at tcp://192.168.49.2:2376
+build concurrency first set to 1 parsed from *local.Builder[0]
+final build concurrency value is 1
+Listing files to watch...
+ - mmaajjuulloo
+List generated in 656.334463ms
+Generating tags...
+ - mmaajjuulloo -> mmaajjuulloo:latest
+Tags generated in 256.36µs
+Checking cache...
+ - mmaajjuulloo: Not found. Building
+Cache check completed in 129.203586ms
+Starting build...
+Found [cloud-run-dev-internal] context, using local docker daemon.
+Building [mmaajjuulloo]...
+Target platforms: [linux/amd64]
+exit status 1. Docker build ran into internal error. Please retry.
+If this keeps happening, please open an issue..

@@ -1,0 +1,133 @@
+2022-03-08 23:03:49,293 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'run']
+2022-03-08 23:03:49,322 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'run', 'services']
+2022-03-08 23:03:49,572 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'run', 'services', 'describe']
+2022-03-08 23:03:49,585 DEBUG    root            Running [gcloud.beta.run.services.describe] with arguments: [--format: "json", --platform: "managed", --project: "ordinal-throne-343519", --quiet: "True", --region: "us-central1", SERVICE: "mmaajjuulloo"]
+2022-03-08 23:03:49,604 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true
+2022-03-08 23:03:49,610 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2022-03-08 23:03:49,613 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true HTTP/1.1" 200 None
+2022-03-08 23:03:49,615 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token
+2022-03-08 23:03:49,621 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2022-03-08 23:03:49,624 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token HTTP/1.1" 200 None
+2022-03-08 23:03:49,639 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true
+2022-03-08 23:03:49,646 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2022-03-08 23:03:49,651 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true HTTP/1.1" 200 None
+2022-03-08 23:03:49,652 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token
+2022-03-08 23:03:49,659 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2022-03-08 23:03:49,663 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token HTTP/1.1" 200 None
+2022-03-08 23:03:49,698 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true
+2022-03-08 23:03:49,705 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2022-03-08 23:03:49,709 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true HTTP/1.1" 200 None
+2022-03-08 23:03:49,710 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token
+2022-03-08 23:03:49,714 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2022-03-08 23:03:49,717 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token HTTP/1.1" 200 None
+2022-03-08 23:03:49,731 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true
+2022-03-08 23:03:49,735 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2022-03-08 23:03:49,739 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true HTTP/1.1" 200 None
+2022-03-08 23:03:49,740 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token
+2022-03-08 23:03:49,747 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2022-03-08 23:03:49,752 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token HTTP/1.1" 200 None
+2022-03-08 23:03:49,764 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): us-central1-run.googleapis.com:443
+2022-03-08 23:03:50,049 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/ordinal-throne-343519/services/mmaajjuulloo?alt=json HTTP/1.1" 200 None
+2022-03-08 23:03:50,055 INFO     root            Display format: "service json"
+2022-03-08 23:03:50,061 INFO     ___FILE_ONLY___ {
+  "apiVersion": "serving.knative.dev/v1",
+  "kind": "Service",
+  "metadata": {
+    "annotations": {
+      "client.knative.dev/user-image": "gcr.io/ordinal-throne-343519/mmaajjuulloo",
+      "run.googleapis.com/client-name": "Cloud Code for VS Code",
+      "run.googleapis.com/client-version": "1.14.1",
+      "run.googleapis.com/ingress": "all",
+      "run.googleapis.com/ingress-status": "all",
+      "serving.knative.dev/creator": "mmaajjuulloo@gmail.com",
+      "serving.knative.dev/lastModifier": "mmaajjuulloo@gmail.com"
+    },
+    "creationTimestamp": "2022-03-08T23:00:05.185772Z",
+    "generation": 1,
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1"
+    },
+    "name": "mmaajjuulloo",
+    "namespace": "628536881943",
+    "resourceVersion": "AAXZvP2Eoog",
+    "selfLink": "/apis/serving.knative.dev/v1/namespaces/628536881943/services/mmaajjuulloo",
+    "uid": "652b1d32-5f73-404a-b72c-af1d2f239231"
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "client.knative.dev/user-image": "gcr.io/ordinal-throne-343519/mmaajjuulloo",
+          "run.googleapis.com/client-name": "Cloud Code for VS Code",
+          "run.googleapis.com/client-version": "1.14.1"
+        },
+        "name": "mmaajjuulloo-00001-kos"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "image": "gcr.io/ordinal-throne-343519/mmaajjuulloo",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1",
+                "memory": "256Mi"
+              }
+            }
+          }
+        ],
+        "serviceAccountName": "628536881943-compute@developer.gserviceaccount.com",
+        "timeoutSeconds": 300
+      }
+    },
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100
+      }
+    ]
+  },
+  "status": {
+    "address": {
+      "url": "https://mmaajjuulloo-fykze4f6fa-uc.a.run.app"
+    },
+    "conditions": [
+      {
+        "lastTransitionTime": "2022-03-08T23:03:33.960328Z",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastTransitionTime": "2022-03-08T23:03:33.492336Z",
+        "status": "True",
+        "type": "ConfigurationsReady"
+      },
+      {
+        "lastTransitionTime": "2022-03-08T23:03:33.960328Z",
+        "status": "True",
+        "type": "RoutesReady"
+      }
+    ],
+    "latestCreatedRevisionName": "mmaajjuulloo-00001-kos",
+    "latestReadyRevisionName": "mmaajjuulloo-00001-kos",
+    "observedGeneration": 1,
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100,
+        "revisionName": "mmaajjuulloo-00001-kos"
+      }
+    ],
+    "url": "https://mmaajjuulloo-fykze4f6fa-uc.a.run.app"
+  }
+}
+2022-03-08 23:03:50,062 INFO     ___FILE_ONLY___ 
+
+2022-03-08 23:03:50,063 DEBUG    root            SDK update checks are disabled.

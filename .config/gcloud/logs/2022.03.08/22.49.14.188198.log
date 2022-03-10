@@ -1,0 +1,22 @@
+2022-03-08 22:49:14,196 DEBUG    root            Loaded Command Group: ['gcloud', 'run']
+2022-03-08 22:49:14,288 DEBUG    root            Loaded Command Group: ['gcloud', 'run', 'services']
+2022-03-08 22:49:14,439 DEBUG    root            Loaded Command Group: ['gcloud', 'run', 'services', 'list']
+2022-03-08 22:49:14,471 DEBUG    root            Running [gcloud.run.services.list] with arguments: [--format: "json", --platform: "managed", --project: "ordinal-throne-343519", --quiet: "True"]
+2022-03-08 22:49:14,502 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true
+2022-03-08 22:49:14,522 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2022-03-08 22:49:14,529 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true HTTP/1.1" 200 None
+2022-03-08 22:49:14,533 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token
+2022-03-08 22:49:14,544 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2022-03-08 22:49:14,553 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token HTTP/1.1" 200 None
+2022-03-08 22:49:14,577 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true
+2022-03-08 22:49:14,584 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2022-03-08 22:49:14,591 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true HTTP/1.1" 200 None
+2022-03-08 22:49:14,592 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token
+2022-03-08 22:49:14,599 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2022-03-08 22:49:14,605 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token HTTP/1.1" 200 None
+2022-03-08 22:49:14,667 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): run.googleapis.com:443
+2022-03-08 22:49:15,119 DEBUG    urllib3.connectionpool https://run.googleapis.com:443 "GET /v1/projects/ordinal-throne-343519/locations/-/services?alt=json HTTP/1.1" 200 None
+2022-03-08 22:49:15,126 INFO     root            Display format: "table(ready_symbol.color(red="[xX]",green="[✓✔]",yellow="[-!…]"):label="",firstof(id,metadata.name):label=SERVICE,region:label=REGION,domain:label=URL,last_modifier:label="LAST DEPLOYED BY",last_transition_time:label="LAST DEPLOYED AT") json"
+2022-03-08 22:49:15,129 INFO     ___FILE_ONLY___ []
+
+2022-03-08 22:49:15,131 DEBUG    root            SDK update checks are disabled.

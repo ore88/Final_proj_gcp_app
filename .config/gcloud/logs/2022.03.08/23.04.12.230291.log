@@ -1,0 +1,221 @@
+2022-03-08 23:04:12,234 DEBUG    root            Loaded Command Group: ['gcloud', 'run']
+2022-03-08 23:04:12,304 DEBUG    root            Loaded Command Group: ['gcloud', 'run', 'services']
+2022-03-08 23:04:12,377 DEBUG    root            Loaded Command Group: ['gcloud', 'run', 'services', 'list']
+2022-03-08 23:04:12,387 DEBUG    root            Running [gcloud.run.services.list] with arguments: [--format: "json", --platform: "managed", --project: "ordinal-throne-343519", --quiet: "True"]
+2022-03-08 23:04:12,408 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true
+2022-03-08 23:04:12,414 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2022-03-08 23:04:12,418 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true HTTP/1.1" 200 None
+2022-03-08 23:04:12,419 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token
+2022-03-08 23:04:12,422 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2022-03-08 23:04:12,426 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token HTTP/1.1" 200 None
+2022-03-08 23:04:12,438 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true
+2022-03-08 23:04:12,444 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2022-03-08 23:04:12,447 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true HTTP/1.1" 200 None
+2022-03-08 23:04:12,448 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token
+2022-03-08 23:04:12,453 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2022-03-08 23:04:12,456 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token HTTP/1.1" 200 None
+2022-03-08 23:04:12,483 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): run.googleapis.com:443
+2022-03-08 23:04:12,908 DEBUG    urllib3.connectionpool https://run.googleapis.com:443 "GET /v1/projects/ordinal-throne-343519/locations/-/services?alt=json HTTP/1.1" 200 None
+2022-03-08 23:04:12,926 INFO     root            Display format: "table(ready_symbol.color(red="[xX]",green="[✓✔]",yellow="[-!…]"):label="",firstof(id,metadata.name):label=SERVICE,region:label=REGION,domain:label=URL,last_modifier:label="LAST DEPLOYED BY",last_transition_time:label="LAST DEPLOYED AT") json"
+2022-03-08 23:04:12,943 INFO     ___FILE_ONLY___ [
+  {
+2022-03-08 23:04:12,943 INFO     ___FILE_ONLY___ 
+    "apiVersion": "serving.knative.dev/v1",
+2022-03-08 23:04:12,946 INFO     ___FILE_ONLY___ 
+    "kind": "Service",
+2022-03-08 23:04:12,947 INFO     ___FILE_ONLY___ 
+    "metadata": {
+2022-03-08 23:04:12,947 INFO     ___FILE_ONLY___ 
+      "annotations": {
+2022-03-08 23:04:12,947 INFO     ___FILE_ONLY___ 
+        "client.knative.dev/user-image": "gcr.io/ordinal-throne-343519/mmaajjuulloo",
+2022-03-08 23:04:12,947 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/client-name": "Cloud Code for VS Code",
+2022-03-08 23:04:12,948 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/client-version": "1.14.1",
+2022-03-08 23:04:12,948 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/ingress": "all",
+2022-03-08 23:04:12,948 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/ingress-status": "all",
+2022-03-08 23:04:12,948 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/creator": "mmaajjuulloo@gmail.com",
+2022-03-08 23:04:12,948 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/lastModifier": "mmaajjuulloo@gmail.com"
+2022-03-08 23:04:12,949 INFO     ___FILE_ONLY___ 
+      },
+2022-03-08 23:04:12,951 INFO     ___FILE_ONLY___ 
+      "creationTimestamp": "2022-03-08T23:00:05.185772Z",
+2022-03-08 23:04:12,952 INFO     ___FILE_ONLY___ 
+      "generation": 1,
+2022-03-08 23:04:12,952 INFO     ___FILE_ONLY___ 
+      "labels": {
+2022-03-08 23:04:12,953 INFO     ___FILE_ONLY___ 
+        "cloud.googleapis.com/location": "us-central1"
+2022-03-08 23:04:12,954 INFO     ___FILE_ONLY___ 
+      },
+2022-03-08 23:04:12,954 INFO     ___FILE_ONLY___ 
+      "name": "mmaajjuulloo",
+2022-03-08 23:04:12,954 INFO     ___FILE_ONLY___ 
+      "namespace": "628536881943",
+2022-03-08 23:04:12,954 INFO     ___FILE_ONLY___ 
+      "resourceVersion": "AAXZvP2Eoog",
+2022-03-08 23:04:12,954 INFO     ___FILE_ONLY___ 
+      "selfLink": "/apis/serving.knative.dev/v1/namespaces/628536881943/services/mmaajjuulloo",
+2022-03-08 23:04:12,955 INFO     ___FILE_ONLY___ 
+      "uid": "652b1d32-5f73-404a-b72c-af1d2f239231"
+2022-03-08 23:04:12,956 INFO     ___FILE_ONLY___ 
+    },
+2022-03-08 23:04:12,956 INFO     ___FILE_ONLY___ 
+    "spec": {
+2022-03-08 23:04:12,956 INFO     ___FILE_ONLY___ 
+      "template": {
+2022-03-08 23:04:12,957 INFO     ___FILE_ONLY___ 
+        "metadata": {
+2022-03-08 23:04:12,958 INFO     ___FILE_ONLY___ 
+          "annotations": {
+2022-03-08 23:04:12,958 INFO     ___FILE_ONLY___ 
+            "autoscaling.knative.dev/maxScale": "100",
+2022-03-08 23:04:12,958 INFO     ___FILE_ONLY___ 
+            "client.knative.dev/user-image": "gcr.io/ordinal-throne-343519/mmaajjuulloo",
+2022-03-08 23:04:12,958 INFO     ___FILE_ONLY___ 
+            "run.googleapis.com/client-name": "Cloud Code for VS Code",
+2022-03-08 23:04:12,958 INFO     ___FILE_ONLY___ 
+            "run.googleapis.com/client-version": "1.14.1"
+2022-03-08 23:04:12,959 INFO     ___FILE_ONLY___ 
+          },
+2022-03-08 23:04:12,960 INFO     ___FILE_ONLY___ 
+          "name": "mmaajjuulloo-00001-kos"
+2022-03-08 23:04:12,960 INFO     ___FILE_ONLY___ 
+        },
+2022-03-08 23:04:12,960 INFO     ___FILE_ONLY___ 
+        "spec": {
+2022-03-08 23:04:12,961 INFO     ___FILE_ONLY___ 
+          "containerConcurrency": 80,
+2022-03-08 23:04:12,962 INFO     ___FILE_ONLY___ 
+          "containers": [
+2022-03-08 23:04:12,962 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 23:04:12,962 INFO     ___FILE_ONLY___ 
+              "image": "gcr.io/ordinal-throne-343519/mmaajjuulloo",
+2022-03-08 23:04:12,962 INFO     ___FILE_ONLY___ 
+              "ports": [
+2022-03-08 23:04:12,962 INFO     ___FILE_ONLY___ 
+                {
+2022-03-08 23:04:12,963 INFO     ___FILE_ONLY___ 
+                  "containerPort": 8080,
+2022-03-08 23:04:12,964 INFO     ___FILE_ONLY___ 
+                  "name": "http1"
+2022-03-08 23:04:12,964 INFO     ___FILE_ONLY___ 
+                }
+2022-03-08 23:04:12,964 INFO     ___FILE_ONLY___ 
+              ],
+2022-03-08 23:04:12,969 INFO     ___FILE_ONLY___ 
+              "resources": {
+2022-03-08 23:04:12,970 INFO     ___FILE_ONLY___ 
+                "limits": {
+2022-03-08 23:04:12,970 INFO     ___FILE_ONLY___ 
+                  "cpu": "1",
+2022-03-08 23:04:12,970 INFO     ___FILE_ONLY___ 
+                  "memory": "256Mi"
+2022-03-08 23:04:12,970 INFO     ___FILE_ONLY___ 
+                }
+2022-03-08 23:04:12,971 INFO     ___FILE_ONLY___ 
+              }
+2022-03-08 23:04:12,971 INFO     ___FILE_ONLY___ 
+            }
+2022-03-08 23:04:12,972 INFO     ___FILE_ONLY___ 
+          ],
+2022-03-08 23:04:12,972 INFO     ___FILE_ONLY___ 
+          "serviceAccountName": "628536881943-compute@developer.gserviceaccount.com",
+2022-03-08 23:04:12,972 INFO     ___FILE_ONLY___ 
+          "timeoutSeconds": 300
+2022-03-08 23:04:12,973 INFO     ___FILE_ONLY___ 
+        }
+2022-03-08 23:04:12,974 INFO     ___FILE_ONLY___ 
+      },
+2022-03-08 23:04:12,974 INFO     ___FILE_ONLY___ 
+      "traffic": [
+2022-03-08 23:04:12,974 INFO     ___FILE_ONLY___ 
+        {
+2022-03-08 23:04:12,974 INFO     ___FILE_ONLY___ 
+          "latestRevision": true,
+2022-03-08 23:04:12,974 INFO     ___FILE_ONLY___ 
+          "percent": 100
+2022-03-08 23:04:12,975 INFO     ___FILE_ONLY___ 
+        }
+2022-03-08 23:04:12,975 INFO     ___FILE_ONLY___ 
+      ]
+2022-03-08 23:04:12,975 INFO     ___FILE_ONLY___ 
+    },
+2022-03-08 23:04:12,975 INFO     ___FILE_ONLY___ 
+    "status": {
+2022-03-08 23:04:12,975 INFO     ___FILE_ONLY___ 
+      "address": {
+2022-03-08 23:04:12,975 INFO     ___FILE_ONLY___ 
+        "url": "https://mmaajjuulloo-fykze4f6fa-uc.a.run.app"
+2022-03-08 23:04:12,976 INFO     ___FILE_ONLY___ 
+      },
+2022-03-08 23:04:12,976 INFO     ___FILE_ONLY___ 
+      "conditions": [
+2022-03-08 23:04:12,976 INFO     ___FILE_ONLY___ 
+        {
+2022-03-08 23:04:12,977 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2022-03-08T23:03:33.960328Z",
+2022-03-08 23:04:12,978 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2022-03-08 23:04:12,978 INFO     ___FILE_ONLY___ 
+          "type": "Ready"
+2022-03-08 23:04:12,978 INFO     ___FILE_ONLY___ 
+        },
+2022-03-08 23:04:12,978 INFO     ___FILE_ONLY___ 
+        {
+2022-03-08 23:04:12,978 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2022-03-08T23:03:33.492336Z",
+2022-03-08 23:04:12,978 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2022-03-08 23:04:12,981 INFO     ___FILE_ONLY___ 
+          "type": "ConfigurationsReady"
+2022-03-08 23:04:12,982 INFO     ___FILE_ONLY___ 
+        },
+2022-03-08 23:04:12,982 INFO     ___FILE_ONLY___ 
+        {
+2022-03-08 23:04:12,982 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2022-03-08T23:03:33.960328Z",
+2022-03-08 23:04:12,982 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2022-03-08 23:04:12,983 INFO     ___FILE_ONLY___ 
+          "type": "RoutesReady"
+2022-03-08 23:04:12,989 INFO     ___FILE_ONLY___ 
+        }
+2022-03-08 23:04:12,990 INFO     ___FILE_ONLY___ 
+      ],
+2022-03-08 23:04:12,990 INFO     ___FILE_ONLY___ 
+      "latestCreatedRevisionName": "mmaajjuulloo-00001-kos",
+2022-03-08 23:04:12,990 INFO     ___FILE_ONLY___ 
+      "latestReadyRevisionName": "mmaajjuulloo-00001-kos",
+2022-03-08 23:04:12,990 INFO     ___FILE_ONLY___ 
+      "observedGeneration": 1,
+2022-03-08 23:04:12,990 INFO     ___FILE_ONLY___ 
+      "traffic": [
+2022-03-08 23:04:12,991 INFO     ___FILE_ONLY___ 
+        {
+2022-03-08 23:04:12,991 INFO     ___FILE_ONLY___ 
+          "latestRevision": true,
+2022-03-08 23:04:12,991 INFO     ___FILE_ONLY___ 
+          "percent": 100,
+2022-03-08 23:04:12,991 INFO     ___FILE_ONLY___ 
+          "revisionName": "mmaajjuulloo-00001-kos"
+2022-03-08 23:04:12,991 INFO     ___FILE_ONLY___ 
+        }
+2022-03-08 23:04:12,991 INFO     ___FILE_ONLY___ 
+      ],
+2022-03-08 23:04:12,991 INFO     ___FILE_ONLY___ 
+      "url": "https://mmaajjuulloo-fykze4f6fa-uc.a.run.app"
+2022-03-08 23:04:12,992 INFO     ___FILE_ONLY___ 
+    }
+2022-03-08 23:04:12,992 INFO     ___FILE_ONLY___ 
+  }
+2022-03-08 23:04:12,992 INFO     ___FILE_ONLY___ 
+]
+
+2022-03-08 23:04:13,003 DEBUG    root            SDK update checks are disabled.

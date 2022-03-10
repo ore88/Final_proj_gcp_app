@@ -1,0 +1,5 @@
+2022-03-08 21:08:40,950 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'code']
+2022-03-08 21:08:41,019 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'code', 'export']
+2022-03-08 21:08:41,041 DEBUG    root            Running [gcloud.beta.code.export] with arguments: [--dockerfile: "", --env-vars: "OrderedDict([('K_SERVICE', 'mmaajjuulloo'), ('K_REVISION', 'local'), ('K_CONFIGURATION', 'mmaajjuulloo')])", --image: "mmaajjuulloo", --kubernetes-file: "/tmp/cloud-code-cloud-run-MtjEwJ/pods_and_services.yaml", --memory: "268435456", --no-skaffold-file: "True", --quiet: "True", --readiness-probe: "True", --service-name: "mmaajjuulloo"]
+2022-03-08 21:08:41,111 INFO     root            Display format: "default"
+2022-03-08 21:08:41,114 DEBUG    root            SDK update checks are disabled.

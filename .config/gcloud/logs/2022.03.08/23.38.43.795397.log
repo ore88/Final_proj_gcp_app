@@ -1,0 +1,10 @@
+2022-03-08 23:38:43,797 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2022-03-08 23:38:43,801 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'list']
+2022-03-08 23:38:43,807 DEBUG    root            Running [gcloud.auth.list] with arguments: [--filter: "status=ACTIVE", --format: "value(account)", --quiet: "True"]
+2022-03-08 23:38:43,826 INFO     root            Display format: "    table[title='Credentialed Accounts'](
+        status.yesno(yes='*', no=''):label=ACTIVE,
+        account
+    ) value(account)"
+2022-03-08 23:38:43,828 INFO     ___FILE_ONLY___ mmaajjuulloo@gmail.com
+
+2022-03-08 23:38:43,829 DEBUG    root            SDK update checks are disabled.

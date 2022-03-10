@@ -1,0 +1,295 @@
+2022-03-08 22:48:52,449 DEBUG    root            Loaded Command Group: ['gcloud', 'services']
+2022-03-08 22:48:52,461 DEBUG    root            Loaded Command Group: ['gcloud', 'services', 'list']
+2022-03-08 22:48:52,468 DEBUG    root            Running [gcloud.services.list] with arguments: [--enabled: "True", --filter: "config.name=run.googleapis.com OR config.name=sql-component.googleapis.com OR config.name=sqladmin.googleapis.com", --format: "json", --project: "ordinal-throne-343519", --quiet: "True"]
+2022-03-08 22:48:52,493 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true
+2022-03-08 22:48:52,503 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2022-03-08 22:48:52,508 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/?recursive=true HTTP/1.1" 200 None
+2022-03-08 22:48:52,510 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token
+2022-03-08 22:48:52,522 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2022-03-08 22:48:52,532 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/mmaajjuulloo@gmail.com/token HTTP/1.1" 200 None
+2022-03-08 22:48:52,584 INFO     root            Display format: "
+          table(
+            config.name:label=NAME:sort=1,
+            config.title
+          )
+         json"
+2022-03-08 22:48:52,595 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2022-03-08 22:48:52,981 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/ordinal-throne-343519/services?alt=json&filter=state%3AENABLED HTTP/1.1" 200 None
+2022-03-08 22:48:53,080 INFO     ___FILE_ONLY___ [
+  {
+2022-03-08 22:48:53,080 INFO     ___FILE_ONLY___ 
+    "config": {
+2022-03-08 22:48:53,081 INFO     ___FILE_ONLY___ 
+      "authentication": {},
+2022-03-08 22:48:53,081 INFO     ___FILE_ONLY___ 
+      "documentation": {
+2022-03-08 22:48:53,081 INFO     ___FILE_ONLY___ 
+        "summary": "Google Cloud SQL is a hosted and fully managed relational database service\n    on Google's infrastructure."
+2022-03-08 22:48:53,081 INFO     ___FILE_ONLY___ 
+      },
+2022-03-08 22:48:53,081 INFO     ___FILE_ONLY___ 
+      "monitoredResources": [
+2022-03-08 22:48:53,082 INFO     ___FILE_ONLY___ 
+        {
+2022-03-08 22:48:53,082 INFO     ___FILE_ONLY___ 
+          "labels": [
+2022-03-08 22:48:53,082 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,082 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/location"
+2022-03-08 22:48:53,082 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,082 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,083 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/uid"
+2022-03-08 22:48:53,083 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,083 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,083 INFO     ___FILE_ONLY___ 
+              "key": "serviceruntime.googleapis.com/api_version"
+2022-03-08 22:48:53,083 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,084 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,084 INFO     ___FILE_ONLY___ 
+              "key": "serviceruntime.googleapis.com/api_method"
+2022-03-08 22:48:53,084 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,084 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,084 INFO     ___FILE_ONLY___ 
+              "key": "serviceruntime.googleapis.com/consumer_project"
+2022-03-08 22:48:53,085 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,085 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,085 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/project"
+2022-03-08 22:48:53,085 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,085 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,085 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/service"
+2022-03-08 22:48:53,086 INFO     ___FILE_ONLY___ 
+            }
+2022-03-08 22:48:53,086 INFO     ___FILE_ONLY___ 
+          ],
+2022-03-08 22:48:53,086 INFO     ___FILE_ONLY___ 
+          "type": "serviceruntime.googleapis.com/api"
+2022-03-08 22:48:53,086 INFO     ___FILE_ONLY___ 
+        },
+2022-03-08 22:48:53,086 INFO     ___FILE_ONLY___ 
+        {
+2022-03-08 22:48:53,086 INFO     ___FILE_ONLY___ 
+          "labels": [
+2022-03-08 22:48:53,087 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,087 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/location"
+2022-03-08 22:48:53,087 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,087 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,087 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/uid"
+2022-03-08 22:48:53,087 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,088 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,088 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/service"
+2022-03-08 22:48:53,088 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,088 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,088 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/resource_id"
+2022-03-08 22:48:53,089 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,089 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,089 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/resource_node"
+2022-03-08 22:48:53,089 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,089 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,089 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/quota_metric"
+2022-03-08 22:48:53,090 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,090 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,090 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/quota_location"
+2022-03-08 22:48:53,090 INFO     ___FILE_ONLY___ 
+            }
+2022-03-08 22:48:53,090 INFO     ___FILE_ONLY___ 
+          ],
+2022-03-08 22:48:53,090 INFO     ___FILE_ONLY___ 
+          "type": "serviceruntime.googleapis.com/consumer_quota"
+2022-03-08 22:48:53,091 INFO     ___FILE_ONLY___ 
+        },
+2022-03-08 22:48:53,091 INFO     ___FILE_ONLY___ 
+        {
+2022-03-08 22:48:53,091 INFO     ___FILE_ONLY___ 
+          "labels": [
+2022-03-08 22:48:53,091 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,091 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/location"
+2022-03-08 22:48:53,092 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,092 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,092 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/uid"
+2022-03-08 22:48:53,092 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,092 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,092 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/service"
+2022-03-08 22:48:53,093 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,093 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,093 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/resource_id"
+2022-03-08 22:48:53,093 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,093 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,093 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/resource_node"
+2022-03-08 22:48:53,094 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,094 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,094 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/consumer_resource_node"
+2022-03-08 22:48:53,094 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,094 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,094 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/quota_metric"
+2022-03-08 22:48:53,095 INFO     ___FILE_ONLY___ 
+            },
+2022-03-08 22:48:53,095 INFO     ___FILE_ONLY___ 
+            {
+2022-03-08 22:48:53,095 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/quota_location"
+2022-03-08 22:48:53,095 INFO     ___FILE_ONLY___ 
+            }
+2022-03-08 22:48:53,095 INFO     ___FILE_ONLY___ 
+          ],
+2022-03-08 22:48:53,095 INFO     ___FILE_ONLY___ 
+          "type": "serviceruntime.googleapis.com/producer_quota"
+2022-03-08 22:48:53,096 INFO     ___FILE_ONLY___ 
+        }
+2022-03-08 22:48:53,096 INFO     ___FILE_ONLY___ 
+      ],
+2022-03-08 22:48:53,096 INFO     ___FILE_ONLY___ 
+      "monitoring": {
+2022-03-08 22:48:53,096 INFO     ___FILE_ONLY___ 
+        "consumerDestinations": [
+2022-03-08 22:48:53,096 INFO     ___FILE_ONLY___ 
+          {
+2022-03-08 22:48:53,097 INFO     ___FILE_ONLY___ 
+            "metrics": [
+2022-03-08 22:48:53,097 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/api/consumer/request_count",
+2022-03-08 22:48:53,097 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/api/consumer/error_count",
+2022-03-08 22:48:53,097 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/api/consumer/quota_used_count",
+2022-03-08 22:48:53,097 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/api/consumer/quota_refund_count",
+2022-03-08 22:48:53,097 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/api/consumer/total_latencies",
+2022-03-08 22:48:53,098 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/api/consumer/request_overhead_latencies",
+2022-03-08 22:48:53,098 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/api/consumer/backend_latencies",
+2022-03-08 22:48:53,098 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/api/consumer/request_sizes",
+2022-03-08 22:48:53,098 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/api/consumer/response_sizes",
+2022-03-08 22:48:53,098 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/api/consumer/top_request_count_by_end_user",
+2022-03-08 22:48:53,098 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/api/consumer/top_request_count_by_end_user_country",
+2022-03-08 22:48:53,099 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/api/consumer/top_request_count_by_referer",
+2022-03-08 22:48:53,099 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/quota/used",
+2022-03-08 22:48:53,099 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/quota/limit",
+2022-03-08 22:48:53,099 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/quota/exceeded",
+2022-03-08 22:48:53,099 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/allocation/consumer/quota_used_count"
+2022-03-08 22:48:53,099 INFO     ___FILE_ONLY___ 
+            ],
+2022-03-08 22:48:53,100 INFO     ___FILE_ONLY___ 
+            "monitoredResource": "serviceruntime.googleapis.com/api"
+2022-03-08 22:48:53,100 INFO     ___FILE_ONLY___ 
+          },
+2022-03-08 22:48:53,100 INFO     ___FILE_ONLY___ 
+          {
+2022-03-08 22:48:53,100 INFO     ___FILE_ONLY___ 
+            "metrics": [
+2022-03-08 22:48:53,100 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/quota/rate/consumer/used_count",
+2022-03-08 22:48:53,100 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/quota/rate/consumer/refund_count",
+2022-03-08 22:48:53,101 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/quota/allocation/consumer/usage",
+2022-03-08 22:48:53,101 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/quota/consumer/limit",
+2022-03-08 22:48:53,101 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/quota/consumer/exceeded"
+2022-03-08 22:48:53,101 INFO     ___FILE_ONLY___ 
+            ],
+2022-03-08 22:48:53,101 INFO     ___FILE_ONLY___ 
+            "monitoredResource": "serviceruntime.googleapis.com/consumer_quota"
+2022-03-08 22:48:53,101 INFO     ___FILE_ONLY___ 
+          }
+2022-03-08 22:48:53,102 INFO     ___FILE_ONLY___ 
+        ]
+2022-03-08 22:48:53,102 INFO     ___FILE_ONLY___ 
+      },
+2022-03-08 22:48:53,102 INFO     ___FILE_ONLY___ 
+      "name": "sql-component.googleapis.com",
+2022-03-08 22:48:53,102 INFO     ___FILE_ONLY___ 
+      "quota": {},
+2022-03-08 22:48:53,102 INFO     ___FILE_ONLY___ 
+      "title": "Cloud SQL",
+2022-03-08 22:48:53,102 INFO     ___FILE_ONLY___ 
+      "usage": {
+2022-03-08 22:48:53,103 INFO     ___FILE_ONLY___ 
+        "requirements": [
+2022-03-08 22:48:53,103 INFO     ___FILE_ONLY___ 
+          "serviceusage.googleapis.com/tos/cloud"
+2022-03-08 22:48:53,103 INFO     ___FILE_ONLY___ 
+        ]
+2022-03-08 22:48:53,103 INFO     ___FILE_ONLY___ 
+      }
+2022-03-08 22:48:53,103 INFO     ___FILE_ONLY___ 
+    },
+2022-03-08 22:48:53,103 INFO     ___FILE_ONLY___ 
+    "name": "projects/628536881943/services/sql-component.googleapis.com",
+2022-03-08 22:48:53,104 INFO     ___FILE_ONLY___ 
+    "parent": "projects/628536881943",
+2022-03-08 22:48:53,104 INFO     ___FILE_ONLY___ 
+    "state": "ENABLED"
+2022-03-08 22:48:53,104 INFO     ___FILE_ONLY___ 
+  }
+2022-03-08 22:48:53,127 INFO     ___FILE_ONLY___ 
+]
+
+2022-03-08 22:48:53,134 DEBUG    root            SDK update checks are disabled.
