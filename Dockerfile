@@ -1,17 +1,20 @@
-# Use the official lightweight Python image.
-# https://hub.docker.com/_/python
-FROM python:3.9-slim
+FROM python:3.8
 
-# Allow statements and log messages to immediately appear in the Knative logs
-ENV PYTHONUNBUFFERED True
+ENV PORT 80
+ENV HOST 0.0.0.0
 
-# Copy local code to the container image.
-ENV APP_HOME /app
-WORKDIR $APP_HOME
-COPY . ./
+EXPOSE 80
 
-RUN apt-get update &&\
-    apt-get install -y libsndfile1
+RUN apt-get update -y && \
+    apt-get install -y python3-pip
+
+COPY ./requirements.txt /app/requirements.txt
+
+WORKDIR /app
+
 RUN pip install -r requirements.txt
-EXPOSE 8080
-CMD ["gunicorn", "main:app", "-b", ":8080", "--timeout", "300"]
+
+COPY . /app
+
+
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 project:app
