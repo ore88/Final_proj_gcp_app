@@ -174,3 +174,6 @@ git add .
 git commit -m "cloud docker 13"
 git push
 git init
+git add .
+git commit -m "dockerfile update40"
+git push
