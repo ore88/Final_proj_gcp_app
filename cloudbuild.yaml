@@ -5,5 +5,5 @@ steps:
   - deploy
   - --source=.
   - --trigger-http
-  - --runtime=python37
+  - --runtime=python38
   - --allow-unauthenticated
