@@ -7,7 +7,7 @@ ADD . /app
 RUN pip install --upgrade pip
 
 #Install python libraries from requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Set $PORT environment variable
 ENV PORT 8080
