@@ -1,10 +1,12 @@
 FROM python:3.8.0-slim
 
-# Copy local code to the container image
-COPY . /app
+RUN pip install virtualenv
+ENV VIRTUAL_ENV=/venv
+RUN virtualenv venv -p python3
+ENV PATH="VIRTUAL_ENV/bin:$PATH"
 
-# Sets the working directory
 WORKDIR /app
+ADD . /app
 
 # Upgrade PIP
 RUN pip install --upgrade pip
@@ -17,3 +19,12 @@ ENV PORT 8080
 
 # Run the web service on container startup
 CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 main:app
+
+
+
+
+# Install dependencies
+RUN pip install -r requirements.txt
+
+# Expose port 
+ENV PORT 8080
