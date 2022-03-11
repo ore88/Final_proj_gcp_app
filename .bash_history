@@ -127,3 +127,50 @@ source /home/mmaajjuulloo/.venv/bin/activate
 /home/mmaajjuulloo/.venv/bin/python3.9 /home/mmaajjuulloo/Final_proj_gcp_app/main.py
 virtualenv ~/.venv
 source ~/.venv/bin/activate
+git add .
+git commit -m "using docker"
+git push
+git push git@github.com:ore88/Final_proj_gcp_app.git
+git push --set-upstream git@github.com:ore88/Final_proj_gcp_app.git master
+git push
+git push 
+cd /home/mmaajjuulloo/Final_proj_gcp_app
+virtualenv ~/.venv
+source ~/.venv/bin/activate
+git init
+get remote origin
+git remote origin
+git add .
+git commit -m "pushing to git"
+git push
+git add .
+git commit -m "pushing new to git"
+git push
+git add .
+git commit -m "add2"
+git push
+git add .
+git commit -m "uopdating requirements file "
+git push
+git add .
+git commit -m "updatin docke file 3"
+git push
+git add .
+git commit -m "adding cloud build"
+git push
+git add . 
+git commit -m "cloud build update22"
+git push
+git add . 
+git commit -m "cloud build update33"
+git push
+git add .
+git commit -m "cloud docker 111"
+git push
+git add .
+git commit -m "cloud docker 12"
+git push
+git add .
+git commit -m "cloud docker 13"
+git push
+git init
