@@ -14,12 +14,3 @@ ENV PORT 8080
 
 # Run the web service on container startup
 CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 main:app
-
-
-
-
-# Install dependencies
-RUN pip install -r requirements.txt
-
-# Expose port 
-ENV PORT 8080
