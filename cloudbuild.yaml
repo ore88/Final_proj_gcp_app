@@ -3,7 +3,6 @@ steps:
   args:
   - app
   - deploy
-  - --source=.
   - --trigger-http
   - --runtime=python38
   - --allow-unauthenticated
