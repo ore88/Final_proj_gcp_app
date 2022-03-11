@@ -1,8 +1,15 @@
 steps:
-- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+- name: python:3.8
+  id: INSTALL
+  entrypoint: python3
   args:
-  - app
-  - deploy
-  - --trigger-http
-  - --runtime=python38
-  - --allow-unauthenticated
+  - '-m'
+  - 'pip'
+  - 'install'
+  - '-t'
+  - '.'
+  - '-r'
+  - 'requirements.txt'
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy"]
+timeout: "1600s"
